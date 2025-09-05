@@ -1,0 +1,30 @@
+[
+    {
+        "key": "general:border_size",
+        "value": 0
+    },
+    {
+        "key": "decoration:blur:size",
+        "value": 5
+    },
+    {
+        "key": "decoration:blur:passes",
+        "value": 2
+    },
+    {
+        "key": "decoration:shadow:enabled",
+        "value": "false"
+    },
+    {
+        "key": "general:gaps_in",
+        "value": 1.0
+    },
+    {
+        "key": "general:gaps_out",
+        "value": 2.0
+    },
+    {
+        "key": "decoration:rounding",
+        "value": 10
+    }
+]
