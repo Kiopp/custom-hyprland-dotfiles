@@ -1,2 +1,2 @@
 # custom-hyprland-dotfiles
-My own take on the ml4w dotfiles
+This repo contains my personal customizations for the ml4w dotfiles for hyprland
