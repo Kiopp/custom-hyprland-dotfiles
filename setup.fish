@@ -116,6 +116,24 @@ echo "Creating symbolic link for hyprctl.json"
 ln -s "$script_dir/ml4w_settings/hyprctl.json" "$ml4w_settings"
 
 # -----------------------------------------------------
+# Kitty
+# -----------------------------------------------------
+
+set kitty "$HOME/.config/kitty/custom.conf"
+
+# Test if file exists
+if test -e "$kitty"
+    echo "File exists. Removing $kitty..."
+    # Remove the existing file or link
+    rm "$kitty"
+    echo "$kitty removed."
+end
+
+# Create symbolic link
+echo "Creating symbolic link for kitty configuration"
+ln -s "$script_dir/kitty/custom.conf" "$kitty"
+
+# -----------------------------------------------------
 # Reload Hyprland
 # -----------------------------------------------------
 echo "Reloading hyprland"

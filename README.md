@@ -7,6 +7,7 @@ This repo contains my personal customizations for the ml4w dotfiles for hyprland
 * Monitor configuration
 * Themeswitcher script - Modified to find themes in symbolic links (for easy setup using setup.fish)
 * ML4W Hyprland Settings configuration
+* Kitty config - For fastfetch wallust colors
 ## Setup guide
 Run the included setup.fish script
 ### The script does the following:
