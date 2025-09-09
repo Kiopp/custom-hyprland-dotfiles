@@ -57,6 +57,7 @@ end
 # Create symbolic link
 echo "Creating symbolic link for wallpaper script"
 ln -s "$script_dir/hypr/scripts/wallpaper.sh" "$wall_script"
+#ln -s "$script_dir/hypr/scripts/laptop-wallpaper.sh" "$wall_script"
 
 # -----------------------------------------------------
 # Keybindings
