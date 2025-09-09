@@ -80,6 +80,7 @@ ln -s "$script_dir/hypr/keybindings/custom.conf" "$keybindings"
 # -----------------------------------------------------
 
 set monitors "$HOME/.config/hypr/conf/monitors/custom.conf"
+set lmonitors "$HOME/.config/hypr/conf/monitors/custom-laptop.conf"
 
 # Test if file exists
 if test -e "$monitors"
@@ -88,9 +89,16 @@ if test -e "$monitors"
     echo "$monitors removed."
 end
 
+if test -e "$lmonitors"
+    # Remove the existing file or link
+    rm "$lmonitors"
+    echo "$lmonitors removed."
+end
+
 # Create symbolic link
 echo "Creating symbolic link for monitor setup"
 ln -s "$script_dir/hypr/monitors/custom.conf" "$monitors"
+ln -s "$script_dir/hypr/monitors/custom-laptop.conf" "$lmonitors"
 
 # -----------------------------------------------------
 # Waybar theme switcher.sh
