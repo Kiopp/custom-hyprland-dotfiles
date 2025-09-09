@@ -20,4 +20,4 @@ Run the included setup.fish script. For the laptop setup, edit the script to cha
 * If they exist; removes old config
 * Creates symbolic links for my custom configurations
 * Reload hyprland
-After the script is run, you need to manually select your desired files in ~/.config/hypr/conf the monitor.conf and keybinding.conf
+#### After the script is run, you need to manually select your desired files in ~/.config/hypr/conf (monitor.conf and keybinding.conf)
