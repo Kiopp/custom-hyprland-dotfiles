@@ -1,13 +1,15 @@
 # custom-hyprland-dotfiles
-This repo contains my personal customizations for the ml4w dotfiles for hyprland.
+This repo contains my personal customizations for the ml4w dotfiles for hyprland. I try to avoid modifying the official ml4w files, and only include extras. Some minor modifications had to be done.
 ## Included customizations
-* Waybar theme - Kiopp Modern
+### Modified official files
 * Wallpaper script - (temp hopefully) Run wallust for terminal colors when changing wallpaper, which is missing in the latest(stable) version of ML4W
-* Wallust config
 * Autostart configurations - No longer run hypridle, I don't like hypridle >:(
+* Themeswitcher script - Modified to find themes as symbolic links
+### Custom extras
+* Waybar theme - Kiopp Modern
+* Wallust config
 * Keybindings
 * Monitor configuration
-* Themeswitcher script - Modified to find themes in symbolic links (for easy setup using setup.fish)
 * ML4W Hyprland Settings configuration
 * Kitty config - For fastfetch wallust colors
 ## Dependencies
@@ -20,4 +22,4 @@ Run the included setup.fish script. For the laptop setup, edit the script to cha
 * If they exist; removes old config
 * Creates symbolic links for my custom configurations
 * Reload hyprland
-#### After the script is run, you need to manually select your desired files in ~/.config/hypr/conf (monitor.conf and keybinding.conf)
+#### After the script is run, you need to manually select your desired files in monitor.conf and keybinding.conf
