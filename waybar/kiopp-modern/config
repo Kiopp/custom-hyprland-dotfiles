@@ -20,7 +20,8 @@
     // Load Modules
     "include": [
         "~/.config/ml4w/settings/waybar-quicklinks.json",
-        "~/.config/waybar/modules.json"
+        "~/.config/waybar/modules.json",
+        "~/.config/waybar/themes/kiopp-modern/kiopp-modules.json"
     ],
 
     // Modules Left
@@ -53,7 +54,8 @@
         "tray",
         "custom/notification",
         "custom/exit",
-        "custom/ml4w-welcome",
+        //"custom/ml4w-welcome",
+        "custom/kiopp-welcome",
         "clock"
     ]
 }
