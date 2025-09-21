@@ -25,3 +25,7 @@
     font-family: "Material Icons";
     color: @icon_color;
 }
+
+#custom-exit {
+    font-size: 18px;
+}
