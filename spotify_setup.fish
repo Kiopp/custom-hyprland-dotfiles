@@ -10,6 +10,8 @@ set prefs_path = "/home/jesper/.var/app/com.spotify.Client/config/spotify/prefs"
 # Install spotify from flathub
 # -----------------------------------------------------
 flatpak install com.spotify.Client
+echo "Double-check that spotify is installed at $spotify_client"
+echo "Remember you have to manually add the prefs_path($prefs_path) to ~/.config/spiceify/config-xpui.ini"
 
 # -----------------------------------------------------
 # Update permissions
@@ -18,7 +20,9 @@ sudo chmod a+wr /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/fil
 sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/Apps
 
 # -----------------------------------------------------
-# Install Spicetify, command from official spicetify docs
+# Install Spicetify
+# Source: official spicetify docs:
+# https://spicetify.app/docs/advanced-usage/installation
 # -----------------------------------------------------
 curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
 
