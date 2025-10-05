@@ -4,8 +4,25 @@
 # Created by Jesper Wentzell (Kiopp)
 # -----------------------------------------------------
 
-# Save the script's directory
+# Configure script directory
 set script_dir "$HOME/dotfiles/custom-hyprland-dotfiles"
+
+# -----------------------------------------------------
+# Read command line argument
+# -----------------------------------------------------
+
+set -l arg_str "laptop" # 
+
+set -l is_laptop false # False by default
+
+# Check argument
+if test (count $argv) -gt 0
+    # Check if the first argument matches the required string
+    if test "$argv[1]" = "$arg_str"
+        echo "Loading laptop config..."
+        set is_laptop true
+    end
+end
 
 # -----------------------------------------------------
 # Waybar theme
@@ -56,8 +73,12 @@ end
 
 # Create symbolic link
 echo "Creating symbolic link for wallpaper script"
-ln -s "$script_dir/hypr/scripts/wallpaper.sh" "$wall_script"
-#ln -s "$script_dir/hypr/scripts/laptop-wallpaper.sh" "$wall_script"
+if $is_laptop
+    ln -s "$script_dir/hypr/scripts/laptop-wallpaper.sh" "$wall_script"
+else
+    ln -s "$script_dir/hypr/scripts/wallpaper.sh" "$wall_script"
+end
+
 
 # -----------------------------------------------------
 # Keybindings
