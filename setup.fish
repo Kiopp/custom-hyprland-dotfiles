@@ -38,7 +38,7 @@ if test -d "$waybar_themes/kiopp-modern"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for kiopp-modern"
+echo "Creating symbolic link"
 ln -s "$script_dir/waybar/kiopp-modern" "$waybar_themes"
 
 # -----------------------------------------------------
@@ -55,7 +55,7 @@ if test -d "$wallust"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for wallust"
+echo "Creating symbolic link"
 ln -s "$script_dir/wallust" "$wallust"
 
 # -----------------------------------------------------
@@ -72,7 +72,7 @@ if test -e "$wall_script"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for wallpaper script"
+echo "Creating symbolic link"
 if $is_laptop
     ln -s "$script_dir/hypr/scripts/laptop-wallpaper.sh" "$wall_script"
 else
@@ -94,7 +94,7 @@ if test -e "$keybindings"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for keybindings"
+echo "Creating symbolic link"
 ln -s "$script_dir/hypr/keybindings/custom.conf" "$keybindings"
 
 # -----------------------------------------------------
@@ -118,7 +118,7 @@ if test -e "$lmonitors"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for monitor setup"
+echo "Creating symbolic links"
 ln -s "$script_dir/hypr/monitors/custom.conf" "$monitors"
 ln -s "$script_dir/hypr/monitors/custom-laptop.conf" "$lmonitors"
 
@@ -136,7 +136,7 @@ if test -e "$themeswitch"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for themeswitcher.sh"
+echo "Creating symbolic link"
 ln -s "$script_dir/waybar/themeswitcher.sh" "$themeswitch"
 
 # -----------------------------------------------------
@@ -153,7 +153,7 @@ if test -e "$ml4w_settings"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for hyprctl.json"
+echo "Creating symbolic link"
 ln -s "$script_dir/ml4w_settings/hyprctl.json" "$ml4w_settings"
 
 # -----------------------------------------------------
@@ -170,7 +170,7 @@ if test -e "$kitty"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for kitty configuration"
+echo "Creating symbolic link"
 ln -s "$script_dir/kitty/custom.conf" "$kitty"
 
 # -----------------------------------------------------
@@ -187,8 +187,25 @@ if test -e "$autostart"
 end
 
 # Create symbolic link
-echo "Creating symbolic link for kitty configuration"
+echo "Creating symbolic link"
 ln -s "$script_dir/hypr/conf/autostart.conf" "$autostart"
+
+# -----------------------------------------------------
+# Windowrules
+# -----------------------------------------------------
+
+set windowrules "$HOME/.config/hypr/conf/windowrules/custom.conf"
+
+# Test if file exists
+if test -e "$windowrules"
+    # Remove the existing file or link
+    rm "$windowrules"
+    echo "$windowrules removed."
+end
+
+# Create symbolic link
+echo "Creating symbolic link"
+ln -s "$script_dir/hypr/windowrules/custom.conf" "$windowrules"
 
 # -----------------------------------------------------
 # Reload Hyprland
