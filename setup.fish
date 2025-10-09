@@ -188,7 +188,12 @@ end
 
 # Create symbolic link
 echo "Creating symbolic link"
-ln -s "$script_dir/hypr/conf/autostart.conf" "$autostart"
+
+if $is_laptop
+    ln -s "$script_dir/hypr/conf/laptop-autostart.conf" "$autostart"
+else
+    ln -s "$script_dir/hypr/conf/autostart.conf" "$autostart"
+end
 
 # -----------------------------------------------------
 # Windowrules
@@ -205,11 +210,7 @@ end
 
 # Create symbolic link
 echo "Creating symbolic link"
-if $is_laptop
-    ln -s "$script_dir/hypr/windowrules/custom.conf" "$windowrules"
-else
-    ln -s "$script_dir/hypr/windowrules/laptop-custom.conf" "$windowrules"
-end
+ln -s "$script_dir/hypr/windowrules/custom.conf" "$windowrules"
 
 # -----------------------------------------------------
 # Reload Hyprland
