@@ -205,7 +205,11 @@ end
 
 # Create symbolic link
 echo "Creating symbolic link"
-ln -s "$script_dir/hypr/windowrules/custom.conf" "$windowrules"
+if $is_laptop
+    ln -s "$script_dir/hypr/windowrules/custom.conf" "$windowrules"
+else
+    ln -s "$script_dir/hypr/windowrules/laptop-custom.conf" "$windowrules"
+end
 
 # -----------------------------------------------------
 # Reload Hyprland
