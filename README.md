@@ -12,6 +12,8 @@ This repo contains my personal customizations for the ml4w dotfiles for hyprland
 * Monitor configuration
 * ML4W Hyprland Settings configuration
 * Kitty config - For fastfetch wallust colors
+* Windowrules: Discord & Spotify always open on workspace 2
+* Autostart: Open Discord & Spotify on startup
 ## Dependencies
 * wallust - I use yay to install
 * The ml4w dotfiles for hyprland should be installed
