@@ -42,45 +42,6 @@ echo "Creating symbolic link"
 ln -s "$script_dir/waybar/kiopp-modern" "$waybar_themes"
 
 # -----------------------------------------------------
-# Wallust config
-# -----------------------------------------------------
-
-set wallust "$HOME/.config/wallust"
-
-# Test if directory exists
-if test -d "$wallust"
-    # Remove the existing file or link
-    rm -r "$wallust"
-    echo "$wallust removed."
-end
-
-# Create symbolic link
-echo "Creating symbolic link"
-ln -s "$script_dir/wallust" "$wallust"
-
-# -----------------------------------------------------
-# Wallpaper script
-# -----------------------------------------------------
-
-set wall_script "$HOME/.config/hypr/scripts/wallpaper.sh"
-
-# Test if file exists
-if test -e "$wall_script"
-    # Remove the existing file or link
-    rm "$wall_script"
-    echo "$wall_script removed."
-end
-
-# Create symbolic link
-echo "Creating symbolic link"
-if $is_laptop
-    ln -s "$script_dir/hypr/scripts/laptop-wallpaper.sh" "$wall_script"
-else
-    ln -s "$script_dir/hypr/scripts/wallpaper.sh" "$wall_script"
-end
-
-
-# -----------------------------------------------------
 # Keybindings
 # -----------------------------------------------------
 
@@ -157,23 +118,6 @@ echo "Creating symbolic link"
 ln -s "$script_dir/ml4w_settings/hyprctl.json" "$ml4w_settings"
 
 # -----------------------------------------------------
-# Kitty
-# -----------------------------------------------------
-
-set kitty "$HOME/.config/kitty/custom.conf"
-
-# Test if file exists
-if test -e "$kitty"
-    # Remove the existing file or link
-    rm "$kitty"
-    echo "$kitty removed."
-end
-
-# Create symbolic link
-echo "Creating symbolic link"
-ln -s "$script_dir/kitty/custom.conf" "$kitty"
-
-# -----------------------------------------------------
 # Hypridle
 # -----------------------------------------------------
 
@@ -212,6 +156,22 @@ end
 echo "Creating symbolic link"
 ln -s "$script_dir/hypr/windowrules/custom.conf" "$windowrules"
 
+# -----------------------------------------------------
+# Matugen kitty template
+# -----------------------------------------------------
+
+set kitty "$HOME/.config/matugen/templates/kitty-colors.conf"
+
+# Test if file exists
+if test -e "$kitty"
+    # Remove the existing file or link
+    rm "$kitty"
+    echo "$kitty removed."
+end
+
+# Create symbolic link
+echo "Creating symbolic link"
+ln -s "$script_dir/matugen/kitty-colors.conf" "$kitty"
 # -----------------------------------------------------
 # Reload Hyprland
 # -----------------------------------------------------
