@@ -21,7 +21,7 @@
     },
     {
         "key": "general:gaps_out",
-        "value": 2.0
+        "value": 1.0
     },
     {
         "key": "decoration:rounding",
