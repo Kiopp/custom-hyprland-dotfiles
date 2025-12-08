@@ -13,7 +13,7 @@ This repo contains my personal customizations for the ml4w dotfiles for hyprland
 * Autostart: Open Discord & Spotify on startup
 * Matugen kitty color template
 ## Dependencies
-* The ml4w dotfiles for hyprland should be installed
+* The latest version of the ml4w dotfiles for hyprland should be installed
 ## Setup guide
 Run the included setup.fish script. For the laptop setup, run like this:
 ```./setup.fish laptop```
@@ -22,4 +22,4 @@ Run the included setup.fish script. For the laptop setup, run like this:
 * If they exist; **DELETES** old config
 * Creates symbolic links for my custom configurations
 * Reload hyprland
-#### After the script is run, you need to manually select your desired files in monitor.conf and keybinding.conf
+#### After the script is run, you need to manually select the files in monitor.conf and keybinding.conf
