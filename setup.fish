@@ -25,7 +25,7 @@ if test (count $argv) -gt 0
 end
 
 # -----------------------------------------------------
-# Waybar theme
+# Waybar themes
 # -----------------------------------------------------
 
 set waybar_themes "$HOME/.config/waybar/themes"
@@ -40,6 +40,17 @@ end
 # Create symbolic link
 echo "Creating symbolic link"
 ln -s "$script_dir/waybar/kiopp-modern" "$waybar_themes"
+
+# Test if directory exists
+if test -d "$waybar_themes/kiopp-glass"
+    # Remove the existing file or link
+    rm -r "$waybar_themes/kiopp-glass"
+    echo "$waybar_themes/kiopp-glass removed."
+end
+
+# Create symbolic link
+echo "Creating symbolic link"
+ln -s "$script_dir/waybar/kiopp-glass" "$waybar_themes"
 
 # -----------------------------------------------------
 # Keybindings

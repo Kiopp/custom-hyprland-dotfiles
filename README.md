@@ -5,7 +5,7 @@ This repo contains my personal customizations for the ml4w dotfiles for hyprland
 * Autostart configurations - No longer run hypridle, I don't like hypridle >:(
 * Themeswitcher script - Modified to find themes as symbolic links
 ### Custom extras
-* Waybar theme - Kiopp Modern
+* Waybar themes - Kiopp Modern, Kiopp Glass
 * Keybindings
 * Monitor configuration
 * ML4W Hyprland Settings configuration
@@ -13,7 +13,7 @@ This repo contains my personal customizations for the ml4w dotfiles for hyprland
 * Autostart: Open Discord & Spotify on startup
 * Matugen kitty color template
 ## Dependencies
-* The latest version of the ml4w dotfiles for hyprland should be installed
+* The latest stable version of the ml4w dotfiles for hyprland should be installed
 ## Setup guide
 Run the included setup.fish script. For the laptop setup, run like this:
 ```./setup.fish laptop```

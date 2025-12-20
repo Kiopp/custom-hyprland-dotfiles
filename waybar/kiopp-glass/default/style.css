@@ -1,0 +1,28 @@
+/* -----------------------------------------------------
+ * Import Matugen Colors
+ * ----------------------------------------------------- */
+@import '../../../../../.config/waybar/colors.css';
+
+@import '../style.css';
+
+/* custom welcome app module */
+#custom-kiopp-welcome {
+    /*padding-right: 12px;*/
+    font-size: 20px;
+    font-family: "Material Icons";
+    color: @icon_color;
+}
+
+#custom-exit {
+    font-size: 16px;
+}
+
+#window {
+	margin-right: 12px;
+	margin-left: 12px;
+}
+
+.modules-left, .modules-right, .modules-center {
+	margin: 5px;
+	margin-top: 0px;
+}
