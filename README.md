@@ -22,4 +22,13 @@ Run the included setup.fish script. For the laptop setup, run like this:
 * If they exist; **DELETES** old config
 * Creates symbolic links for my custom configurations
 * Reload hyprland
+## Spicetify setup
+Run the included spotify_setup.fish script.
+### The script does the following:
+* Set required filepaths (default is my filepaths)
+* Install spotify flatpak package
+* Updates required permissions for Spicetify to be able to modify the spotify files
+* Installs Spicetify
+* Applies backup (if reinstalling)
+**Remember you have to manually add the prefs_path($prefs_path) to ~/.config/spiceify/config-xpui.ini**
 #### After the script is run, you need to manually select the files in monitor.conf and keybinding.conf
