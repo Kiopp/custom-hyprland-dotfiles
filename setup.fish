@@ -184,6 +184,22 @@ end
 echo "Creating symbolic link"
 ln -s "$script_dir/matugen/kitty-colors.conf" "$kitty"
 # -----------------------------------------------------
+# Fastfetch
+# -----------------------------------------------------
+
+set fastfetch_conf "$HOME/.config/fastfetch"
+
+# Test if directory exists
+if test -d "$fastfetch_conf"
+    # Remove the existing file or link
+    rm -r "$fastfetch_conf"
+    echo "$fastfetch_conf removed."
+end
+
+# Create symbolic link
+echo "Creating symbolic link"
+ln -s "$script_dir/fastfetch" "$fastfetch_conf"
+# -----------------------------------------------------
 # Reload Hyprland
 # -----------------------------------------------------
 echo "Reloading hyprland"
