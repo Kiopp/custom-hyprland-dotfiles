@@ -1,9 +1,10 @@
 # custom-hyprland-dotfiles
-This repo contains my personal customizations for the ml4w dotfiles for hyprland. I try to avoid modifying the official ml4w files, and only include extras.
+This repo contains my personal customizations for ml4wOS. I try to avoid modifying the official ml4w files, and only include extras.
 ## Included customizations
 ### Modified official files
 * Autostart configurations - No longer run hypridle, I don't like hypridle >:(
 * Themeswitcher script - Modified to find themes as symbolic links
+* fastfetch config - I do not prefer the ml4w logo
 ### Custom extras
 * Waybar themes - Kiopp Modern, Kiopp Glass
 * Keybindings
@@ -32,5 +33,7 @@ Run the included spotify_setup.fish script.
 * Installs Spicetify
 * Applies backup (if reinstalling)
 #### Remember you have to manually add the prefs_path to ~/.config/spiceify/config-xpui.ini
+## How to update
+Install the ml4w update by using the official install script like normal. Then come back to this git repository and revert the changes made from the update.
 ## License
 This project is licensed under the GPL 3.0, as it incorporates code/components from the ML4W dotfiles.
