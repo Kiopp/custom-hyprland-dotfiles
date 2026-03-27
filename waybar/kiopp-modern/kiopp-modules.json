@@ -1,7 +1,7 @@
 {
 // Custom ML4W Welcome App module
   "custom/kiopp-welcome": {
-    "on-click": "flatpak run com.ml4w.sidebar",
+    "on-click": "qs ipc call sidebar toggle",
     "format": "menu",
     "tooltip-format": "Open ML4W Sidebar App"
   }

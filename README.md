@@ -33,7 +33,7 @@ Run the included spotify_setup.fish script.
 * Installs Spicetify
 * Applies backup (if reinstalling)
 #### Remember you have to manually add the prefs_path to ~/.config/spiceify/config-xpui.ini
-## How to update
-Install the ml4w update by using the official install script like normal. Then come back to this git repository and revert the changes made from the update.
+## How I update
+Install the ml4w update by using the official install script like normal. Then come back to this git repository and review or revert the changes made from the update. In ml4w v2.12.0 the app menu in waybar needs to be toggled in the ml4w settings app.
 ## License
 This project is licensed under the GPL 3.0, as it incorporates code/components from the ML4W dotfiles.
