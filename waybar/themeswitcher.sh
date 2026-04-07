@@ -29,7 +29,7 @@ listNames2=""
 # Read theme folder
 # -----------------------------------------------------
 sleep 0.2
-options=$(find $themes_path -maxdepth 2 -type d)
+options=$(find -L $themes_path -maxdepth 2 -type d)
 for value in $options; do
     if [ ! $value == "$HOME/.config/waybar/themes/assets" ]; then
         if [ ! $value == "$themes_path" ]; then
