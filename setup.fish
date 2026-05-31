@@ -5,7 +5,7 @@
 # -----------------------------------------------------
 
 set script_dir "$HOME/dotfiles/custom-hyprland-dotfiles"
-set hypr_conf "$HOME/.config/hypr/conf"
+set hypr_conf "$HOME/.config/hypr"
 
 # Helper function to check, delete, and link
 function sync_link
@@ -45,10 +45,11 @@ sync_link "$script_dir/waybar/themeswitcher.sh" "$HOME/.config/waybar/themeswitc
 # -----------------------------------------------------
 set -l ext "lua" 
 
-sync_link "$script_dir/hypr/keybindings/custom.$ext" "$hypr_conf/keybindings/custom.$ext"
-sync_link "$script_dir/hypr/windowrules/custom.$ext" "$hypr_conf/windowrules/custom.$ext"
-sync_link "$script_dir/hypr/monitors/custom.$ext"    "$hypr_conf/monitors/custom.$ext"
-sync_link "$script_dir/hypr/monitors/custom-laptop.$ext" "$hypr_conf/monitors/custom-laptop.$ext"
+sync_link "$script_dir/hypr/keybindings/custom.$ext" "$hypr_conf/conf/keybindings/custom.$ext"
+sync_link "$script_dir/hypr/windowrules/custom.$ext" "$hypr_conf/conf/windowrules/custom.$ext"
+sync_link "$script_dir/hypr/monitors/custom.$ext"    "$hypr_conf/conf/monitors/custom.$ext"
+sync_link "$script_dir/hypr/monitors/custom-laptop.$ext" "$hypr_conf/conf/monitors/custom-laptop.$ext"
+sync_link "$script_dir/hypr/hyprmod/profiles" "$hypr_conf/hyprmod/profiles"
 
 # Conditional Autostart
 if $is_laptop
@@ -60,7 +61,6 @@ end
 # -----------------------------------------------------
 # Miscellaneous
 # -----------------------------------------------------
-sync_link "$script_dir/ml4w_settings/hyprctl.json" "$HOME/.config/com.ml4w.hyprlandsettings/hyprctl.json"
 sync_link "$script_dir/matugen/kitty-colors.conf"  "$HOME/.config/matugen/templates/kitty-colors.conf"
 sync_link "$script_dir/fastfetch"                 "$HOME/.config/fastfetch"
 
