@@ -9,7 +9,7 @@ This repo contains my personal customizations for ml4wOS. I try to avoid modifyi
 * Waybar themes - Kiopp Modern, Kiopp Glass
 * Keybindings
 * Monitor configuration
-* ML4W Hyprland Settings configuration
+* Hyprmod profile
 * Windowrules: Discord & Spotify always open on workspace 2
 * Autostart: Open Discord & Spotify on startup
 * Matugen kitty color template
@@ -23,7 +23,7 @@ Run the included setup.fish script. For the laptop setup, run like this:
 * If they exist; **DELETES** old config
 * Creates symbolic links for my custom configurations
 * Reload hyprland
-#### After the script is run, you should manually select files in monitor.conf and keybinding.conf
+#### After the script is run, you should manually apply those files within the ml4w dotfiles (e.g .config/hypr/conf/keybinding.lua)
 ## Spicetify setup
 Run the included spotify_setup.fish script.
 ### The script does the following:
