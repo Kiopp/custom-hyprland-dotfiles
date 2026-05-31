@@ -43,7 +43,7 @@ sync_link "$script_dir/waybar/themeswitcher.sh" "$HOME/.config/waybar/themeswitc
 # -----------------------------------------------------
 # Hyprland Modules
 # -----------------------------------------------------
-set -l ext "conf" 
+set -l ext "lua" 
 
 sync_link "$script_dir/hypr/keybindings/custom.$ext" "$hypr_conf/keybindings/custom.$ext"
 sync_link "$script_dir/hypr/windowrules/custom.$ext" "$hypr_conf/windowrules/custom.$ext"
