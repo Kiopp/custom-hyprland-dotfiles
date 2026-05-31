@@ -6,6 +6,6 @@ hl.window_rule({
 
 -- Always open Spotify on workspace 2
 hl.window_rule({
-    match = { class = "^(Spotify)$" },
+    match = { class = "^(spotify)$" },
     workspace = "2 silent"
 })
