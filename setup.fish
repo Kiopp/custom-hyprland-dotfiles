@@ -53,9 +53,9 @@ sync_link "$script_dir/hypr/hyprmod/profiles" "$hypr_conf/hyprmod/profiles"
 
 # Conditional Autostart
 if $is_laptop
-    sync_link "$script_dir/hypr/conf/laptop-autostart.$ext" "$hypr_conf/autostart.$ext"
+    sync_link "$script_dir/hypr/conf/laptop-autostart.$ext" "$hypr_conf/conf/autostart.$ext"
 else
-    sync_link "$script_dir/hypr/conf/autostart.$ext" "$hypr_conf/autostart.$ext"
+    sync_link "$script_dir/hypr/conf/autostart.$ext" "$hypr_conf/conf/autostart.$ext"
 end
 
 # -----------------------------------------------------
