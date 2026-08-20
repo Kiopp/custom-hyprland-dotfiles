@@ -3,6 +3,9 @@
 -- Settings
 hl.config({
     decoration = {
+        blur = {
+            size = 1,
+        },
         shadow = {
             enabled = false,
         },
