@@ -63,6 +63,7 @@ end
 # -----------------------------------------------------
 sync_link "$script_dir/matugen/kitty-colors.conf"  "$HOME/.config/matugen/templates/kitty-colors.conf"
 sync_link "$script_dir/fastfetch"                 "$HOME/.config/fastfetch"
+sync_link "$script_dir/quickshell/statusbar.json"  "$HOME/.config/ml4w-statusbar/statusbar.json"
 
 # -----------------------------------------------------
 # Reload

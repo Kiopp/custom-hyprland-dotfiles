@@ -20,7 +20,7 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("~/.config/hypr/scripts/killactive.sh
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/screenshot.sh"), { description = "Take a screenshot" })
 hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd(SCRIPTS .. "/sidepad.sh --select"), { description = "Select Sidepad" })
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("pidof hyprlock || hyprlock"), { description = "Lock Screen" })
-
+hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("~/.config/ml4w/scripts/ml4w-reload-statusbar"), { description = "Reload Status Bar" })
 -- =====================================================
 -- Applications
 -- =====================================================
@@ -131,7 +131,7 @@ hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(SCRIPTS .. "/ml4w-wallpaper-a
 hl.bind(mainMod .. " + CTRL + W", hl.dsp.exec_cmd(SCRIPTS .. "/ml4w-wallpaper-app"), { description = "Open wallpaper selector" })
 hl.bind(mainMod .. " + ALT + W", hl.dsp.exec_cmd(SCRIPTS .. "/ml4w-wallpaper-automation"), { description = "Start random wallpaper script" })
 hl.bind(mainMod .. " + CTRL + K", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/keybindings.sh"), { description = "Show keybindings" })
-hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("~/.config/waybar/launch.sh"), { description = "Reload waybar" })
+hl.bind(mainMod .. " + ALT + B", hl.dsp.exec_cmd("~/.config/waybar/launch.sh"), { description = "Reload waybar" })
 hl.bind(mainMod .. " + CTRL + B", hl.dsp.exec_cmd("~/.config/waybar/toggle.sh"), { description = "Toggle waybar" })
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/loadconfig.sh"), { description = "Reload hyprland config" })
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(SCRIPTS .. "/ml4w-cliphist"), { description = "Open clipboard manager" })
