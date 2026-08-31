@@ -1,7 +1,7 @@
 -- Primary 1440p monitor
 hl.monitor({
     output = "DP-2",
-    mode = "2560x1440@144",
+    mode = "2560x1440@240",
     position = "0x0",
     scale = 1
 })
